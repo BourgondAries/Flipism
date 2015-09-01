@@ -1,6 +1,6 @@
 #! /bin/bash
 if [ "$#" > 1 ]; then
-	echo "$1";
+	echo "$@";
 fi
 if [ "$(head -c 1 /dev/random | hexdump -e '/1 "%u"')" -ge 128 ]; then
 	echo 'YES!';
