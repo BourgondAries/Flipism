@@ -1,0 +1,5 @@
+if [ "$(head -c 1 /dev/random | hexdump -e '/1 "%u"')" -ge 128 ]; then
+	echo 'YES!';
+else
+	echo 'NO!';
+fi
